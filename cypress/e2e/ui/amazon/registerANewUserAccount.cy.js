@@ -12,6 +12,6 @@ describe("Account Creation", () => {
     const password = faker.internet.password();
 
     cy.contains("a", "Comece aqui.", { timeout: 10000 }).click({ force: true });
-    cy.RegisterNewAccount(username, email, password);
+    cy.RegisterNewAmazonAccount(username, email, password);
   });
 });

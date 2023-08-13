@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js'",
+    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'"
   },
   "keywords": [],
   "author": "Willian Santos",
