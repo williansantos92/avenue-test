@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "test:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js'",
-    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'"
+    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "test:all": "cypress run"
   },
   "keywords": [],
   "author": "Willian Santos",

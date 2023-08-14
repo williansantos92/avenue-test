@@ -5,6 +5,7 @@ describe("Weather Information", () => {
   const lat_rj = "-22.90";
   const lon_rj = "-43.20";
   const appId = Cypress.env("appid");
+
   it("Get Weather Information to Porto Alegre", () => {
     cy.getWeatherInformationByApi(lat_poa, lon_poa, appId).then((res) => {
       expect(res.status).equal(200);
