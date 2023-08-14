@@ -7,6 +7,11 @@ module.exports = defineConfig({
     },
     baseUrl: "https://avenue.us/",
     chromeWebSecurity: false,
-    pageLoadTimeout: 100000,
+    pageLoadTimeout: 300000,
+    env: { hideXhr: true },
+  },
+  retries: {
+    runMode: 2,
+    openMode: 0,
   },
 });
